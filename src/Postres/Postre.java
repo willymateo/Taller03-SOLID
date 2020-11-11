@@ -26,4 +26,15 @@ public class Postre {
         return aderezos;
     }
 
+    public void anadirAderezo(Aderezo aderezo){
+        this.aderezos.add(aderezo);
+    }
+    
+    public void quitarAderezo(Aderezo aderezo){
+        this.aderezos.remove(aderezo);
+    }
+    
+    
+    
+    
 }
