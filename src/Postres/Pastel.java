@@ -26,7 +26,7 @@ public class Pastel extends Postre{
     @Override
     public void cambiarLeche(LecheEntera leche_Cambio) {
         if (leche_Cambio instanceof LecheDescremada) {
-            System.out.println("Los pasteles no pueden usar leche deslactosada. ");
+            System.out.println("Los pasteles no pueden usar leche deslactosada. Se usará leche entera.");
         }else{
             leche_Cambio.usar();
         }
