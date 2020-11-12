@@ -11,6 +11,11 @@ package Adicionales;
  */
 public class Malvaviscos extends Aderezo{
     public Malvaviscos(){
+        setNombre();
+    }
+
+    @Override
+    public void setNombre() {
         nombre = "MALVAVISCOS";
     }
     

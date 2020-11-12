@@ -5,6 +5,9 @@
  */
 package Postres;
 
+import Leche.LecheDescremada;
+import Leche.LecheEntera;
+
 /**
  *
  * @author Pedro Mendoza
@@ -17,7 +20,16 @@ public class Pastel extends Postre{
     }
     @Override
     public String toString() {
-        return "Pastel{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
+        return "Pastel{" + "sabor= " + sabor + ", precioParcial= $" + precioParcial + ", aderezos= " + aderezos + '}';
+    }
+
+    @Override
+    public void cambiarLeche(LecheEntera leche_Cambio) {
+        if (leche_Cambio instanceof LecheDescremada) {
+            System.out.println("Los pasteles no pueden usar leche deslactosada. ");
+        }else{
+            leche_Cambio.usar();
+        }
     }
      
 }

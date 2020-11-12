@@ -12,10 +12,10 @@ package Adicionales;
 public abstract class Aderezo {
     public String nombre;
     //MALVAVISCOS,FRUTILLA,CREMA
-    public void setNombre(){
-        this.nombre = nombre;
-    }
+
+    public abstract void setNombre();
+    
     public String toString() {
         return nombre.toUpperCase();
-                }
+    }
 }

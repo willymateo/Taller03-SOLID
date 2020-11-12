@@ -6,13 +6,14 @@
 package Postres;
 
 import Adicionales.Aderezo;
+import Leche.LecheEntera;
 import java.util.ArrayList;
 
 /**
  *
  * @author test1
  */
-public class Postre {
+public abstract class Postre {
     protected String sabor;
     protected double precioParcial;
     protected ArrayList<Aderezo> aderezos;
@@ -38,7 +39,5 @@ public class Postre {
         return precioParcial;
     }
     
-    
-    
-    
+    public abstract void cambiarLeche(LecheEntera leche_Cambio);
 }

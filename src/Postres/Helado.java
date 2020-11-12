@@ -5,6 +5,8 @@
  */
 package Postres;
 
+import Leche.LecheEntera;
+
 /**
  *
  * @author Pedro Mendoza
@@ -18,6 +20,11 @@ public class Helado extends Postre{
     
     @Override
     public String toString() {
-        return "Pastel{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
+        return "Helado{" + "sabor= " + sabor + ", precioParcial= $" + precioParcial + ", aderezos= " + aderezos + '}';
+    }
+
+    @Override
+    public void cambiarLeche(LecheEntera leche_Cambio) {
+        leche_Cambio.usar();
     }
 }
